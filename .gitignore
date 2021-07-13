@@ -5,3 +5,5 @@ venv/
 # IDE folder
 .idea/
 
+# test database
+blog/db.sqlite3
