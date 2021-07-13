@@ -8,6 +8,12 @@ django = "*"
 djangorestframework = "*"
 markdown = "*"
 django-filter = "*"
+celery = "*"
+faker = "*"
+factory-boy = "*"
+flower = "*"
+django-celery-results = "*"
+redis = "*"
 
 [dev-packages]
 

@@ -7,3 +7,6 @@ venv/
 
 # test database
 blog/db.sqlite3
+
+# celery temp file
+blog/celerybeat-schedule.db
