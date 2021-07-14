@@ -41,7 +41,7 @@ INSTALLED_APPS = [
     'celery',
     'django_celery_results',
 
-    'news',
+    'news.apps.NewsConfig',
 ]
 
 MIDDLEWARE = [
@@ -62,6 +62,10 @@ CELERY_ACCEPT_CONTENT = ['application/json']
 CELERY_RESULT_SERIALIZER = 'json'
 CELERY_TASK_SERIALIZER = 'json'
 
+REST_FRAMEWORK = {
+    'DEFAULT_PERMISSION_CLASSES': [],
+    'TEST_REQUEST_DEFAULT_FORMAT': 'json'
+}
 
 TEMPLATES = [
     {
@@ -89,7 +93,12 @@ DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    },
+
+    'TEST': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'test.db'
+    },
 }
 
 
