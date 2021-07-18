@@ -19,7 +19,7 @@ class News(models.Model):
         verbose_name_plural = "news"
 
     def get_absolute_url(self):
-        return f"/{self.slug}/"
+        return f"news/{self.pk}"
 
     def save(self, *args, **kwargs):
         str_time = "".join(str(time()).split("."))

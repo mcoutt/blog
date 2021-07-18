@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'rest_framework',
     'celery',
     'django_celery_results',
+    'django_extensions',
 
     'news.apps.NewsConfig',
 ]

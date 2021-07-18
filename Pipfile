@@ -16,6 +16,7 @@ django-celery-results = "*"
 redis = "*"
 
 [dev-packages]
+django-extensions = "*"
 
 [requires]
 python_version = "3.8"
