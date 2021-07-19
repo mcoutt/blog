@@ -15,6 +15,7 @@ flower = "*"
 django-celery-results = "*"
 redis = "*"
 uwsgi = "*"
+django-extensions = "*"
 
 [dev-packages]
 django-extensions = "*"
