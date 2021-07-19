@@ -28,7 +28,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
         'ec2-34-201-165-211.compute-1.amazonaws.com',
-        '0.0.0.0',
+        '34.201.165.211',
         ]
 
 
@@ -77,7 +77,7 @@ REST_FRAMEWORK = {
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [ os.path.join(BASE_DIR, 'blog/templates'), ],
+        'DIRS': [ os.path.join(BASE_DIR, 'templates'), ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -152,3 +152,9 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+
+
+
+
