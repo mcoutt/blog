@@ -14,6 +14,7 @@ factory-boy = "*"
 flower = "*"
 django-celery-results = "*"
 redis = "*"
+uwsgi = "*"
 
 [dev-packages]
 django-extensions = "*"
