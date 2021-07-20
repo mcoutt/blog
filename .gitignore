@@ -11,3 +11,7 @@ blog/db.sqlite3
 # celery temp file
 blog/celerybeat-schedule.db
 blog/dump.rdb
+
+# static
+blog/static/
+
